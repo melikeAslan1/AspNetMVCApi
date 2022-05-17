@@ -8,7 +8,7 @@ namespace AspNetMVCApi_EL.ViewModels
 {
     public class ResponseData
     {
-        public int Message { get; set; }
+        public string Message { get; set; }
 
         public bool IsSuccess { get; set; }
 
