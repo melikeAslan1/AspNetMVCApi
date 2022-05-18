@@ -60,6 +60,10 @@
     <Compile Include="Implementations\RepositoryBase.cs" />
     <Compile Include="Implementations\StudentRepo.cs" />
     <Compile Include="Implementations\UnitOfWork.cs" />
+    <Compile Include="Migrations\202205180835371_initializeDB.cs" />
+    <Compile Include="Migrations\202205180835371_initializeDB.Designer.cs">
+      <DependentUpon>202205180835371_initializeDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +78,10 @@
       <Name>AspNetMVCApi_EL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202205180835371_initializeDB.resx">
+      <DependentUpon>202205180835371_initializeDB.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
